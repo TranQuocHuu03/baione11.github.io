@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the alert method:</h1>
+    <p>click the button below </p>
+    
+    <button onclick="tinhtuoi()">click</button>
+    <script type="text/javascript">
+        function tinhtuoi(){
+            var d=new date();
+            var dateOfbirth=prompt("nhap ngay sinh:    ");
+            var monthOfbirth=prompt("nhap thang sinh: ");
+            var yearOfbirth=prompt("nhap nam sinh:      ");
+            var ngay_thu= d.getDay();
+            var sotuoi=d.getFullYear()-yearOfbirth;
+            Alert(" hien tai ban" +sotuoi+"ban sinh vao ngay thu: " + ngay_thu);
+            //documnent.getElementById("nhap").innerHTML="nhap" + sotuoi + "ban sinh ngay thu"+ ngay_thu;
+        }
+    </script>
+</body>
+</html>
